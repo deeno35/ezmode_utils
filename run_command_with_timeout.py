@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 #################################################
 # Description: Run a shell command and timeout if it runs longer than X seconds
 #
