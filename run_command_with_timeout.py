@@ -57,6 +57,8 @@ if __name__ == '__main__':
     signal.signal(signal.SIGALRM, alarm_handler)
     signal.alarm(args["timeout"])
     # run the command
-    subprocess.call(args["command"], shell=True)
+    return_code = subprocess.call(args["command"], shell=True)
     # unset the timer if the command completes before time is up
     signal.alarm(0)
+
+    sys.exit(return_code)
