@@ -61,4 +61,5 @@ if __name__ == '__main__':
     # unset the timer if the command completes before time is up
     signal.alarm(0)
 
+    # return the exit code of the command
     sys.exit(return_code)
